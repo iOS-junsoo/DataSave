@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		992F92EA2707543A0017E238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F92E92707543A0017E238 /* AppDelegate.swift */; };
 		992F92EC2707543A0017E238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F92EB2707543A0017E238 /* SceneDelegate.swift */; };
-		992F92EE2707543A0017E238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F92ED2707543A0017E238 /* ViewController.swift */; };
+		992F92EE2707543A0017E238 /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F92ED2707543A0017E238 /* firstViewController.swift */; };
 		992F92F12707543A0017E238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992F92EF2707543A0017E238 /* Main.storyboard */; };
 		992F92F32707543C0017E238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992F92F22707543C0017E238 /* Assets.xcassets */; };
 		992F92F62707543C0017E238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992F92F42707543C0017E238 /* LaunchScreen.storyboard */; };
+		992F9302270754E10017E238 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F9301270754E10017E238 /* secondViewController.swift */; };
+		992F9305270754F90017E238 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F9304270754F90017E238 /* Data.swift */; };
+		992F9307270755050017E238 /* DataList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F9306270755050017E238 /* DataList.swift */; };
+		992F930A2707552B0017E238 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F93082707552B0017E238 /* DataTableViewCell.swift */; };
+		992F930B2707552B0017E238 /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 992F93092707552B0017E238 /* DataTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		992F92E62707543A0017E238 /* DataSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		992F92E92707543A0017E238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		992F92EB2707543A0017E238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		992F92ED2707543A0017E238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		992F92ED2707543A0017E238 /* firstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
 		992F92F02707543A0017E238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		992F92F22707543C0017E238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		992F92F52707543C0017E238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		992F92F72707543C0017E238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992F9301270754E10017E238 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		992F9304270754F90017E238 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		992F9306270755050017E238 /* DataList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataList.swift; sourceTree = "<group>"; };
+		992F93082707552B0017E238 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		992F93092707552B0017E238 /* DataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		992F92E82707543A0017E238 /* DataSave */ = {
 			isa = PBXGroup;
 			children = (
-				992F92E92707543A0017E238 /* AppDelegate.swift */,
-				992F92EB2707543A0017E238 /* SceneDelegate.swift */,
-				992F92ED2707543A0017E238 /* ViewController.swift */,
-				992F92EF2707543A0017E238 /* Main.storyboard */,
-				992F92F22707543C0017E238 /* Assets.xcassets */,
-				992F92F42707543C0017E238 /* LaunchScreen.storyboard */,
-				992F92F72707543C0017E238 /* Info.plist */,
+				992F9303270754EA0017E238 /* Model */,
+				992F92FD270754990017E238 /* App */,
+				992F92FE270754A10017E238 /* Controller */,
+				992F92FF270754AA0017E238 /* View */,
+				992F9300270754B20017E238 /* Asset */,
 			);
 			path = DataSave;
+			sourceTree = "<group>";
+		};
+		992F92FD270754990017E238 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				992F92E92707543A0017E238 /* AppDelegate.swift */,
+				992F92EB2707543A0017E238 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		992F92FE270754A10017E238 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				992F92ED2707543A0017E238 /* firstViewController.swift */,
+				992F9301270754E10017E238 /* secondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		992F92FF270754AA0017E238 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				992F92EF2707543A0017E238 /* Main.storyboard */,
+				992F92F42707543C0017E238 /* LaunchScreen.storyboard */,
+				992F93082707552B0017E238 /* DataTableViewCell.swift */,
+				992F93092707552B0017E238 /* DataTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		992F9300270754B20017E238 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				992F92F22707543C0017E238 /* Assets.xcassets */,
+				992F92F72707543C0017E238 /* Info.plist */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		992F9303270754EA0017E238 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				992F9304270754F90017E238 /* Data.swift */,
+				992F9306270755050017E238 /* DataList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +183,7 @@
 				992F92F62707543C0017E238 /* LaunchScreen.storyboard in Resources */,
 				992F92F32707543C0017E238 /* Assets.xcassets in Resources */,
 				992F92F12707543A0017E238 /* Main.storyboard in Resources */,
+				992F930B2707552B0017E238 /* DataTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				992F92EE2707543A0017E238 /* ViewController.swift in Sources */,
+				992F9302270754E10017E238 /* secondViewController.swift in Sources */,
+				992F9305270754F90017E238 /* Data.swift in Sources */,
+				992F92EE2707543A0017E238 /* firstViewController.swift in Sources */,
+				992F9307270755050017E238 /* DataList.swift in Sources */,
 				992F92EA2707543A0017E238 /* AppDelegate.swift in Sources */,
+				992F930A2707552B0017E238 /* DataTableViewCell.swift in Sources */,
 				992F92EC2707543A0017E238 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXFMRW69P3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DataSave/Info.plist;
+				INFOPLIST_FILE = DataSave/Asset/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +379,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXFMRW69P3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DataSave/Info.plist;
+				INFOPLIST_FILE = DataSave/Asset/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
